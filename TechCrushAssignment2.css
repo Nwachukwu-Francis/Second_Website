@@ -38,7 +38,7 @@ form {
   align-items: center;
   margin-left: 5rem;
   margin-right: 5rem;
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 label {
   color: #330303;
@@ -107,6 +107,7 @@ input:focus{
 
 input[type ="text"], input[type="password"]{
  width: 70%;
+ margin-bottom: 1rem;
 }
 input {
   /* width: 70%; */
@@ -131,7 +132,7 @@ align-items: center;
 gap:1rem;
 }
 form{
-  width: 70vw;
+  width: 90vw;
   display: flex;
   justify-content: center;
   align-items: center;
