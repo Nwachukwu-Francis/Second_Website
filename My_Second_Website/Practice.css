@@ -1,0 +1,773 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Roboto, Open Sans;
+  padding-top: 5rem;
+}
+nav {
+  /* background: hsl(0, 94%, 7%); */
+  background: linear-gradient(to right, rgb(60, 2, 2), black);
+  padding: 10px 15px;
+  margin: 0;
+  z-index: 1000;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+nav ul {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  align-content: center;
+  flex-grow: 1;
+}
+ul li a:hover {
+  padding: 5px 5px;
+  background: rgb(245, 224, 224);
+  border-radius: 5px;
+  color: black;
+}
+
+nav #li {
+  gap: 20px;
+  list-style: none;
+  display: flex;
+}
+nav img,
+h3 img {
+  width: 3rem;
+  border: none;
+  border-radius: 50%;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px 20px;
+  font-size: 2rem;
+  margin-bottom: 0rem;
+}
+img {
+  width: 100vw;
+}
+h1 {
+  color: white;
+  font-size: 5rem;
+
+  margin-top: 1px;
+  margin-bottom: 5rem;
+}
+h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+#heroVideoWrapper {
+  max-width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+#heroVideoWrapper video {
+  width: 100%;
+  border-radius: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.heroContent {
+  max-width: 600px;
+}
+.container {
+  background: linear-gradient(to right, rgb(60, 2, 2), black, black);
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px;
+  gap: 1rem;
+  max-width: 100vw;
+  height: 120vh;
+
+  margin-top: 1px;
+}
+p {
+  color: white;
+  /* font-size: 130%; */
+
+  /* margin-bottom: 3rem; */
+}
+p,
+h1,
+h2 {
+  text-shadow: 3px 2px rgb(131, 3, 3);
+}
+
+/* nav a button {
+  display: flex;
+  justify-content: flex-end;
+  } */
+a button {
+  font-size: 1.5rem;
+  background-color: hsl(0, 0%, 90%);
+  color: hsl(0, 94%, 7%);
+  padding: 10px 10px;
+  border-radius: 30px;
+  border: 1px solid grey;
+  box-shadow: -3px 3px 4px rgba(95, 95, 95, 0.482);
+  flex-grow: 1;
+}
+
+a button:hover {
+  /* padding: 5px 5px; */
+  background: white;
+  color: black;
+  padding: 12px 12px;
+}
+a button:active {
+  background: rgb(245, 224, 224);
+}
+#JoinNow {
+  box-shadow: 3px 3px 4px rgba(95, 95, 95, 0.482);
+}
+#servicesHeader {
+  text-shadow: 2.5px 2px rgb(134, 134, 134);
+  color: rgb(39, 0, 0);
+}
+#servicesImagesWrapper {
+  display: flex;
+
+  /* overflow-x: hidden; */
+  justify-content: space-between;
+  align-items: center;
+  /* flex-shrink: 1; */
+  /* max-width: 50vw;
+  height: 20vh; */
+  width: 100%;
+  box-sizing: border-box;
+}
+#services {
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  background: #ffffff;
+  text-align: center;
+  /* flex-shrink: 1; */
+  /* width: 100%; */
+  margin: 20px;
+  margin-top: 7rem;
+}
+/* #servicesHeader {
+  position: relative;
+  text-shadow: 2px 2px rgba(72, 69, 69, 0.743);
+  display: inline-block;
+  text-align: center;
+  border-bottom: 2px solid red;
+  width: 10%;
+} */
+.servicesImage {
+  max-width: 30%;
+  text-align: center;
+}
+.serviceImage {
+  width: 100%;
+  border-radius: 20px;
+}
+.webDevServicesParagraph {
+  margin: 10px;
+  color: black;
+  text-shadow: 0.5px 2px rgb(134, 134, 134);
+}
+#About {
+  background: rgba(234, 69, 69, 0.117);
+  margin-top: 7rem;
+  padding-bottom: 1rem;
+  /* text-align: center; */
+  /* margin-top: 400px; */
+}
+#aboutIcon {
+  width: 20rem;
+  /* border-radius: 5rem; */
+  float: left;
+  margin: 2rem;
+}
+#aboutHeaderWrapper {
+  padding: 40px 0;
+  width: auto;
+  text-align: center;
+}
+#aboutHeader {
+  color: rgb(39, 0, 0);
+  text-shadow: 3px 2px rgb(134, 134, 134);
+  margin-bottom: 1rem;
+}
+.aboutParagraph {
+  font-size: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 20px;
+  color: rgb(60, 2, 2);
+  text-shadow: 1px 2px rgb(134, 134, 134);
+}
+#contactUs {
+  background: white;
+  /* display: flex; */
+  text-align: start;
+  margin-top: 7rem;
+}
+#reachOut {
+  width: 30%;
+  /* text-align: start; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 5rem;
+}
+#contactHeaderWrapper {
+  text-align: center;
+}
+#contactHeader {
+  /* display: block; */
+  color: rgb(39, 0, 0);
+  text-shadow: 3px 2px rgb(134, 134, 134);
+  margin-top: 5rem;
+}
+#customerCare,
+#contactUsWrapper {
+  display: flex;
+}
+.liveChat {
+  background: rgb(134, 134, 134, 0.1);
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 2rem;
+}
+h3 {
+  font-size: 2rem;
+}
+.red_p {
+  color: rgb(39, 0, 0);
+  text-shadow: 1px 2px rgb(134, 134, 134);
+}
+#reachUsManually {
+  margin-top: 0rem;
+}
+#reachOutToUs {
+  align-self: start;
+  font-size: 1.1rem;
+}
+.button {
+  background: rgb(60, 2, 2);
+  color: white;
+  font-size: 2rem;
+  border-radius: 2rem;
+  padding: 1rem;
+  box-shadow: -3px 3px rgba(134, 134, 134, 0.487);
+}
+.button:hover {
+  padding: 1.1rem;
+}
+/* #termsAndPolicies{
+  font-size: ;
+} */
+#termsAndPolicies a {
+  text-shadow: none;
+}
+#signUpWrapper {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  display: flex;
+  /* background: linear-gradient(
+    170deg,
+    rgb(60, 2, 2),
+    rgb(60, 2, 2),
+    rgb(60, 2, 2),
+    black,
+    black,
+    black
+  ); */
+}
+h3 img {
+  width: 7rem;
+  border-radius: 3.5rem;
+  float: left;
+  text-align: center;
+}
+#kltlogowithDownloadkltApp {
+  margin: 4rem;
+  width: 120%;
+  /* display: column;
+  justify-content: center; */
+}
+.signUp {
+  color: white;
+  /* font-size: 1.5rem; */
+  text-align: start;
+  margin-left: 2.3rem;
+}
+.bigP {
+  font-size: 1.5rem;
+}
+.bigP,
+#upToDate,
+#termsAndPolicies,
+#termsAndPolicies a {
+  text-shadow: 1.3px 2px rgb(131, 3, 3);
+}
+/* input,
+button {
+  margin: 0;
+  padding: 0;
+} */
+#appStore {
+  height: 2.7rem;
+}
+.downloadMobileApp {
+  width: 9rem;
+  margin-right: 1rem;
+  /* padding-right: 0; */
+}
+#signUp {
+  margin: 4rem;
+}
+#Subscribe {
+  margin-left: 0;
+  /* padding: 1rem; */
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  /* width: 3rem; */
+  font-size: 0.9rem;
+  background: white;
+  color: rgb(60, 2, 2);
+  box-shadow: 3px 3px rgba(134, 134, 134, 0.487);
+}
+/* #email:active {
+  border: 3px solid red;
+} */
+#email:focus {
+  border: 0;
+  border: 3px solid rgb(190, 33, 33);
+}
+#email {
+  margin-right: 0;
+  padding: 0.9rem;
+  width: 60%;
+  border: 0;
+}
+#upToDate {
+  font-size: 1.5rem;
+}
+.lineDivide {
+  /* width: 0.1px; */
+
+  border-left: 1px solid rgba(192, 192, 192, 0.5);
+  height: 80%;
+  align-self: center;
+  margin-top: 1rem;
+}
+#termsAndPolicies a {
+  color: white;
+}
+.lineDivider {
+  border: 1px solid rgba(192, 192, 192, 0.5);
+  display: flex;
+  justify-content: center;
+  align-self: start;
+  align-content: start;
+  /* background: yellow; */
+  margin-bottom: 2.5rem;
+}
+a:hover {
+  color: rgba(192, 192, 192, 0.5);
+  text-decoration: underline;
+}
+#footerWrapper {
+  /* background: red; */
+  display: flex;
+  margin-top: 0;
+  padding-top: 0;
+  /* background: linear-gradient(
+    170deg,
+    rgb(60, 2, 2),
+    rgb(60, 2, 2),
+    rgb(60, 2, 2),
+    black,
+    black,
+    black
+  ); */
+}
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+  display: block;
+  /* margin-bottom: 1rem; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* #productFooter {
+  display: flex;
+} */
+footer {
+  background: linear-gradient(
+    170deg,
+    black,
+    rgb(30, 0, 0),
+    rgb(30, 0, 0),
+    black,
+    black,
+    black
+  );
+}
+#footerColumnWrapper,
+#sameFlex {
+  display: flex;
+  text-align: start;
+  /* background: linear-gradient(
+    170deg,
+    rgb(60, 2, 2),
+    rgb(60, 2, 2),
+    rgb(60, 2, 2),
+    black,
+    black,
+    black
+  ); */
+}
+#sameFlex {
+  width: 100%;
+  text-align: start;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#productFooterWrapper {
+  display: flex;
+  border-top: 1px solid rgba(192, 192, 192, 0.5);
+  margin-top: 5rem;
+  padding-top: 2rem;
+}
+/* #productFooter {
+  width: 50%;
+} */
+#customerSupport {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.5rem;
+}
+#footerColumnWrapper {
+  width: 59%;
+  display: flex;
+  justify-content: end;
+  margin-left: 5rem;
+}
+#customers {
+  margin-bottom: 3rem;
+}
+#lineDivide {
+  height: 80%;
+  align-self: center;
+}
+.blockLink {
+  display: inline;
+}
+#footerMediaIconsWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.socialMedia {
+  /* width: auto; */
+  width: 3rem;
+  display: inline;
+  padding: 1rem;
+}
+hr {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#KLT {
+  color: white;
+  margin-bottom: 0;
+}
+#copyRight p {
+  margin: 0;
+  text-shadow: 1.3px 2px rgb(131, 3, 3);
+}
+#copyRight {
+  text-align: center;
+}
+#footerLinks {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.manualContact {
+  text-decoration: underline;
+  color: rgb(60, 2, 2);
+  text-shadow: 1.3px 2px rgb(134, 134, 134);
+}
+.supportIcons {
+  width: 15rem;
+  border-radius: 7.5rem;
+}
+#icon-1,
+#icon-2,
+#icon-3 {
+  width: 9rem;
+  border-radius: 50%;
+}
+nav a:hover,
+li a:hover {
+  text-decoration: none;
+}
+a img:hover {
+  width: 5rem;
+}
+.supportIconsWrapper {
+  width: 15rem;
+  background: none;
+}
+#kltIconTextWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+#kltIconTextWrapper img {
+  width: 5rem;
+  border-radius: 50%;
+  margin-right: 0;
+}
+  @media screen and (max-width:768px){
+      html{
+        font-size: 62.5%;
+
+      }
+      body{
+        
+        margin-top: 1rem;
+      }
+      /* #heroVideoWrapper {
+  width: 100vw;
+  height: 40vh;
+  } */
+.container{
+  display: flex;
+  /* justify-content: center; */
+  width: 200vw;
+  height: 60%;
+  }
+  h1 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+  h2{
+    font-size: 2.5rem;
+  }
+
+nav ul{
+  display: none;
+  justify-content: center;
+  align-content: center;
+}
+.servicesImage p{
+  font-size: 1.1rem;
+  text-align: start;
+      color: rgba(39, 0, 0, 0.895);
+    text-shadow: 1px 2px rgb(134, 134, 134);
+}
+#aboutIcon{
+  width:15rem;
+  border-radius: 30px;
+}
+.aboutParagraph{
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+ #contactUsWrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(3, 0, 0, 0.15);
+  padding-bottom: 5rem;
+  padding-top: 1rem;
+ }
+ #contactHeader{
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+ }
+  #contactHeader h2{
+    color: rgb(20, 1, 1);
+    text-shadow: 3px 2px rgb(255, 255, 255);}
+ #reachOut{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+    width: auto;
+    background: #ffffff;
+    margin: 2rem;
+    border-radius: 2rem;
+    box-shadow: 4px 5px rgba(45, 25, 25, 0.414);
+ }
+ #customerCare{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+ }
+ #reachOut p{
+  
+ }
+ #reachOutToUs{
+  align-self: center;
+  font-size: 2rem;
+ }
+ .liveChat {
+    background: rgb(255, 255, 255);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    width: 70vw;
+    font-size: 1.5rem;
+    box-shadow: 4px 5px rgba(45, 25, 25, 0.414);
+}
+.onlineSupportWrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#signUpWrapper{
+  display: flex;
+  flex-direction: column;
+}
+#kltlogowithDownloadkltApp {
+  display: flex;
+  flex-direction: column;
+    margin: 4rem;
+    width: 100%;
+}
+#kltIconTextWrapper h3{
+  font-size: 3rem;
+  margin-left: 1rem;
+}
+#kltIconTextWrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#sameImageFlex{
+  display: flex;
+}
+.signUp {
+    color: white;
+    text-align: start;
+    margin-left: 0;
+}
+.bigP {
+    font-size: 2rem;
+}
+#sameImageFlex img{
+}
+#appStore {
+    height: 3.5rem;
+}
+h3 {
+    font-size: 2.5rem;
+}
+#upToDate {
+    font-size: 2rem;
+}
+#termsAndPolicies{
+      text-shadow: 0.3px 1.3px rgb(177, 4, 4);
+      
+}
+footer {
+  background: linear-gradient(
+    150deg,
+    black,
+    rgb(30, 0, 0),
+    rgb(30, 0, 0),
+    rgb(40, 0, 0),
+    black,
+    black,
+    black,
+    black
+  );}
+  #productFooterWrapper, #footerColumnWrapper{
+    display: flex;
+  flex-direction: column;
+}
+#productFooterWrapper a{
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+#productFooterWrapper h3{
+  font-size: 3rem;
+  margin-left: 1rem;
+}
+#footerColumnWrapper{
+  width: auto;
+  margin-left: 0;
+}
+#footerColumnWrapper h3{
+  font-size: 3rem;
+  /* margin-left: 1rem; */
+}
+#customerSupport {
+  margin-left: 0;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+#footerLinks{
+  margin: 1rem;
+}
+nav #li{
+  display: flex;
+  justify-content: space-between;
+   align-items: center;
+  width: 100%;
+  margin-right: 1rem;
+  /* margin: 7rem; */
+}
+nav img{
+  width: 5rem;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ #JoinNow {
+    flex-shrink: 0;
+    margin-right: 0.5rem;
+  }
+}
+
+
+
+
+    
