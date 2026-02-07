@@ -13,7 +13,16 @@ body {
   justify-content: center;
 } */
 #Remember {
-  margin-right: 5rem;
+  /* margin-right: 2rem; */
+}
+#flexRememberAndForgot{
+  display: flex;
+  padding-bottom: 1rem;
+  /* gap: 1rem; */
+  /* width: 100vw; */
+}
+#flexRememberAndForgot a{
+  margin-left: 5rem;
 }
 form {
   font-size: medium;
@@ -87,10 +96,11 @@ input:focus{
 
 }
 
-input[text]{
+input[type ="text"], input[type="password"]{
  width: 100%;
 }
 input {
+  /* width: 70%; */
   border-radius: 5px;
   padding: 0.3rem;
   border: 1px solid silver;
@@ -123,8 +133,16 @@ label{
 a{
   font-size: 2rem;
 }
+input[type ="text"], input[type="password"]{
+ width: 70%;
+}
 #flexRememberAndForgot{
   display: flex;
   padding-bottom: 1rem;
+  gap: 1rem;
+  width: 100vw;
+}
+#Remember {
+  /* margin-right: 3rem; */
 }
 }
