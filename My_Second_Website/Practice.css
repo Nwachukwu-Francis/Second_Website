@@ -138,7 +138,7 @@ a button:active {
   box-shadow: 3px 3px 4px rgba(95, 95, 95, 0.482);
 }
 #servicesHeader {
-  text-shadow: 2.5px 2px rgb(134, 134, 134);
+  text-shadow: 1.5px 1.5px rgb(134, 134, 134);
   color: rgb(39, 0, 0);
 }
 #servicesImagesWrapper {
@@ -184,7 +184,7 @@ a button:active {
 .webDevServicesParagraph {
   margin: 10px;
   color: black;
-  text-shadow: 0.5px 2px rgb(134, 134, 134);
+  text-shadow: 0.5px 1px rgb(134, 134, 134);
 }
 #About {
   background: rgba(234, 69, 69, 0.117);
@@ -206,7 +206,7 @@ a button:active {
 }
 #aboutHeader {
   color: rgb(39, 0, 0);
-  text-shadow: 3px 2px rgb(134, 134, 134);
+  text-shadow: 1.5px 1.5px rgb(134, 134, 134);
   margin-bottom: 1rem;
 }
 .aboutParagraph {
@@ -239,7 +239,7 @@ a button:active {
 #contactHeader {
   /* display: block; */
   color: rgb(39, 0, 0);
-  text-shadow: 3px 2px rgb(134, 134, 134);
+  text-shadow: 1.5px 1.5px rgb(134, 134, 134);
   margin-top: 5rem;
 }
 #customerCare,
@@ -601,7 +601,7 @@ nav ul{
 .aboutParagraph{
   font-size: 1.3rem;
   font-family: sans-serif;
-  font-weight: 100;
+      color: rgb(60, 2, 2);
 }
  #contactUsWrapper{
   display: flex;
